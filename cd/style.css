@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h2>Countdown Timer</h2>
+
+    <label>Minutes: </label>
+    <input type="number" id="minutes" placeholder="0">
+
+    <label>Seconds: </label>
+    <input type="number" id="seconds" placeholder="0">
+
+    <br><br>
+
+    <button onclick="startTimer()">Start</button>
+    <button onclick="pauseTimer()">Pause</button>
+    <button onclick="resetTimer()">Reset</button>
+
+    <div id="display">00:00</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+Diana forwarded a message
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+}
+
+#display {
+    font-size: 60px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+input {
+    font-size: 18px;
+    width: 70px;
+    text-align: center;
+}
+
